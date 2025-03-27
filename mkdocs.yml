@@ -98,6 +98,7 @@ markdown_extensions:
       alternate_style: true
   - tables
        
+#Unsure if this is needed.
 #extra_javascript:
   #- javascripts/dropdown.js
 #extra_css:
