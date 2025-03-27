@@ -1,6 +1,6 @@
 ---
 title: Title
-template: home.html
+template: index.html
 ---
 
 
