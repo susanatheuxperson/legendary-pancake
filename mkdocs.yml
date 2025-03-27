@@ -55,7 +55,7 @@ theme:
 
 #This is the site's navigation
 nav:
-  - Home: index.md
+  - Home: docs/index.md
   - About:
       - Overview: about/index.md
       - Team: about/team.md
