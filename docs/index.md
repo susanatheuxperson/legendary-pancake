@@ -1,3 +1,9 @@
+---
+title: Title
+template: home.html
+---
+
+
 # Getting Started
 
 *Testing emojis added to this site* :tea: :cat:

@@ -1,6 +1,7 @@
 site_name: Legendary Pancake Test Site
 site_url: https://susanatheuxperson.github.io/legendary-pancake/
 theme:
+  custom_dir: docs/overrides
   name: material
   features:
     - navigation.tabs        # Enables top-level tabs
