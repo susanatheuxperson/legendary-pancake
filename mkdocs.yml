@@ -1,0 +1,105 @@
+site_name: Legendary Pancake Test Site
+site_url: https://susanatheuxperson.github.io/legendary-pancake/
+theme:
+  name: material
+  features:
+    - navigation.tabs        # Enables top-level tabs
+    - navigation.tabs.sticky # Enables top-level tabs stickied
+    - navigation.sections    # Enables dropdowns in sidebar
+    - content.code.copy      # Allows users to copy a code block
+    - navigation.path        # Breadcrumbs
+    - toc.follow             #Table of contents
+    - navigation.footer       #Navigation footer
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  favicon: assets/cat.png
+
+  icon:
+    # logo: assets/JAXlogo.png
+    logo: material/cat
+    #This list below is for all of the admonition types
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+    
+  palette:
+  #Added both dark and light move for customization
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: indigo
+      accent: light blue
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+#This is the site's navigation
+nav:
+  - Home: home/index.md
+  - About:
+      - Overview: about/index.md
+      - Team: about/team.md
+      - Contact: about/contact.md
+  - Documentation:
+      - Getting Started: documentation/getting-started.md
+      - Advanced Topics:
+          - API Reference: documentation/api.md
+          - Customization: documentation/customization.md
+  - Material Components:
+    - Components:
+      - Admonitions: materialcomponents/admonitions.md
+      - Code Blocks: materialcomponents/codeblocks.md
+      - Diagrams: materialcomponents/diagrams.md
+      - Tabs: materialcomponents/tabs.md 
+      - Buttons: materialcomponents/buttons.md
+    - Plugins: 
+      - Plugins: materialcomponents/plugins.md
+  
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+       
+#extra_javascript:
+  #- javascripts/dropdown.js
+#extra_css:
+#  - stylesheets/dropdown.css
+
