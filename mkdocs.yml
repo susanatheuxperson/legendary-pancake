@@ -59,6 +59,11 @@ nav:
   - index.md
   - Services v1:
       -  servicesv1/index.md
+  - Services v1.5:
+      -  servicesv1.5/01 data-mgmt.md
+      -  servicesv1.5/02 compute.md
+      -  servicesv1.5/03 collab.md
+      -  servicesv1.5/04 category-name.md
   - Services v2:
       -  servicesv2/index.md
   - Support: 
