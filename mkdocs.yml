@@ -56,7 +56,7 @@ theme:
 
 # This is the site's pages (navigation)
 nav:
-  - Home: index.md
+  - index.md
   - Services v1:
       -  servicesv1/index.md
   - Services v2:
