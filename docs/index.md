@@ -1,6 +1,5 @@
 ---
-title: Title
-template: index.html
+title: Getting Started
 ---
 
 

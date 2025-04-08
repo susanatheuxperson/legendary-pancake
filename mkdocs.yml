@@ -1,14 +1,13 @@
 site_name: Legendary Pancake Test Site
 site_url: https://susanatheuxperson.github.io/legendary-pancake/
 theme:
-  custom_dir: overrides
   name: material
   features:
     - navigation.tabs        # Enables top-level tabs
     - navigation.tabs.sticky # Enables top-level tabs stickied
     - navigation.sections    # Enables dropdowns in sidebar
-    - content.code.copy      # Allows users to copy a code block
     - navigation.path        # Breadcrumbs
+    - content.code.copy      # Allows users to copy a code block
     - toc.follow             #Table of contents
     - navigation.footer       #Navigation footer
 
@@ -16,12 +15,13 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+  # This is for the browser icon
   favicon: assets/cat.png
 
   icon:
     # logo: assets/JAXlogo.png
     logo: material/cat
-    #This list below is for all of the admonition types
+    # This list below is for all of the admonition types
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
@@ -37,7 +37,7 @@ theme:
       quote: fontawesome/solid/quote-left
     
   palette:
-  #Added both dark and light move for customization
+  # Added both dark and light move for customization
     # Dark Mode
     - scheme: slate
       toggle:
@@ -54,54 +54,57 @@ theme:
       primary: blue
       accent: deep orange
 
-#This is the site's navigation
+# This is the site's pages (navigation)
 nav:
-  - Home: docs/index.md
-  - About:
-      - Overview: about/index.md
-      - Team: about/team.md
-      - Contact: about/contact.md
-  - Documentation:
-      - Getting Started: documentation/getting-started.md
-      - Advanced Topics:
-          - API Reference: documentation/api.md
-          - Customization: documentation/customization.md
+  - Home: index.md
+  - Services v1:
+      -  servicesv1/index.md
+  - Services v2:
+      -  servicesv2/index.md
+  - Support: 
+      - Overview: 'support/getting-started.md'
+      - Glossary: 'support/glossary.md'
+      - Tutorials:
+          - Introduction to HPC: 'support/intro-to-hpc.md'
+          - Introduction to Linux and Bash: 'support/intro-to-linux.md'
   - Material Components:
-    - Components:
-      - Admonitions: materialcomponents/admonitions.md
-      - Code Blocks: materialcomponents/codeblocks.md
-      - Diagrams: materialcomponents/diagrams.md
-      - Tabs: materialcomponents/tabs.md 
-      - Buttons: materialcomponents/buttons.md
+    - Admonitions: materialcomponents/admonitions.md
+    - Code Blocks: materialcomponents/codeblocks.md
+    - Diagrams: materialcomponents/diagrams.md
+    - Tabs: materialcomponents/tabs.md 
+    - Buttons: materialcomponents/buttons.md
     - Plugins: 
       - Plugins: materialcomponents/plugins.md
   
 
 markdown_extensions:
+# Enables use of grid cards
   - attr_list
+  - md_in_html
+  # Enables emojis :)
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Callouts for relevant side content    
   - admonition
   - pymdownx.details
+  # This is for mermaid data visualization plugin
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  # Allows for highlighting code blocks         
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  # An extension that allows for the ability to embed content into a document including other docs or source file.
   - pymdownx.snippets
+  # Allows for content tabs
   - pymdownx.tabbed:
       alternate_style: true
+  # Enables Markdown table support    
   - tables
-       
-#Unsure if this is needed.
-#extra_javascript:
-  #- javascripts/dropdown.js
-#extra_css:
-#  - stylesheets/dropdown.css
-
+      
