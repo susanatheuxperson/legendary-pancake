@@ -1,0 +1,65 @@
+/* Light mode */
+[data-md-color-scheme="default"] {
+    /* General page background */
+    --md-default-bg-color:     #F4F8FC;   /* Background color from company branding */
+    --md-bg-color:             #F4F8FC;
+  
+    /* Header/nav background and text color */
+    --md-primary-bg-color:     #FFFFFF;   /* White for the header/nav */
+    --md-primary-fg-color:     #05396B;   /* Deep navy for primary text (good contrast) */
+  
+    /* Surface elements like cards/sidebars */
+    --md-surface-color:        #FFFFFF;   /* White for card and surface elements */
+  
+    /* Accent colors for links, buttons, etc. */
+    --md-accent-fg-color:      #FFA500;   /* Orange accent color */
+  
+    /* Adjust code block background */
+    --md-code-bg-color:        #E0E0E0;   /* gray background for code blocks for better contrast */
+  
+    /* Force default link color */
+    --md-typeset-a-color:      #0177B2;   /* Blue color for links */
+  
+    /* Force visited link color */
+    --md-typeset-a-color--visited: #1E3A8A; /* Lighter shade of navy for visited links */
+}
+
+/* Link hover and focus effect */
+[data-md-color-scheme="default"] .md-typeset a:hover,
+[data-md-color-scheme="default"] .md-typeset a:focus {
+    color: #FFA500; /* Matches accent color */
+    text-decoration: underline; /* Adds underline for visibility */
+    opacity: 0.85; /* Slight hover effect */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Focus visible state */
+:focus-visible {
+    outline: 2px solid #FFA500;
+    outline-offset: 2px;
+}
+
+/* Header shadow for depth in light mode */
+.md-header {
+    box-shadow: 0 2px 6px #A2AAAD; /* Soft shadow for light mode */
+}
+
+/* Headings in light mode */
+[data-md-color-scheme="default"] h1,
+[data-md-color-scheme="default"] h2,
+[data-md-color-scheme="default"] h3 {
+    color: #05396B; /* Dark navy color for headings */
+}
+
+/* Code block text color */
+[data-md-color-scheme="default"] .md-typeset pre {
+    color: #333333; /* Dark text color for code blocks for better contrast */
+}
+
+/* Code block border */
+[data-md-color-scheme="default"] .md-typeset pre {
+    border: 1px solid #CCCCCC; /* Light border for code blocks */
+    border-radius: 4px;
+    padding: 4px;
+}
+

@@ -1,15 +1,20 @@
 site_name: Legendary Pancake Test Site
+site_author: A Company
 site_url: https://susanatheuxperson.github.io/legendary-pancake/
+
+#This is for the custom colors for primary and accent.
+extra_css:
+  - stylesheets/extra.css
 theme:
   name: material
   features:
-    - navigation.tabs        # Enables top-level tabs
-    - navigation.tabs.sticky # Enables top-level tabs stickied
-    - navigation.sections    # Enables dropdowns in sidebar
+    - navigation.sections   # Sidebar dropdowns
+    - navigation.tabs       # Top navigation tabs
+    - navigation.tabs.sticky # Sticky top navigation tabs
+    - toc.follow            # Table of contents
+    #- navigation.footer     # Footer navigation unsure if relevant
     - navigation.path        # Breadcrumbs
-    - content.code.copy      # Allows users to copy a code block
-    - toc.follow             #Table of contents
-    - navigation.footer       #Navigation footer
+
 
   font:
     text: Roboto
@@ -35,51 +40,144 @@ theme:
       bug: fontawesome/solid/robot
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
-    
-  palette:
-  # Added both dark and light move for customization
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: indigo
-      accent: light blue
 
-    # Light Mode
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
+# Site colors & automatic dark/light mode toggle
+  palette:
+    primary: custom
+    accent: custom
+
 
 # This is the site's pages (navigation)
 nav:
-  - index.md
-  - Services v1:
-      -  servicesv1/index.md
-  - Services v1.5:
-      -  servicesv1.5/01 data-mgmt.md
-      -  servicesv1.5/02 compute.md
-      -  servicesv1.5/03 collab.md
-      -  servicesv1.5/04 category-name.md
-  - Services v2:
-      -  servicesv2/index.md
-  - Support: 
+  - Home: index.md
+  - Software & Tools: 
+      - Getting Started: services/services-index.md
+      - Documentation:
+        - Software:
+          - Service 1: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+            - 04 Documentation: services/service1/documentation-4.md
+            - 05 Documentation: services/service1/documentation-5.md
+            - 06 Documentation: services/service1/documentation-6.md
+            - 07 Documentation: services/service1/documentation-7.md
+            - 08 Documentation: services/service1/documentation-8.md
+            - 09 Documentation: services/service1/documentation-9.md
+            - 10 Documentation: services/service1/documentation-10.md
+            - 11 Documentation: services/service1/documentation-11.md
+            - 12 Documentation: services/service1/documentation-12.md
+            - 13 Documentation: services/service1/documentation-13.md
+            - 14 Documentation: services/service1/documentation-14.md
+            - 15 Documentation: services/service1/documentation-15.md
+            - 16 Documentation: services/service1/documentation-16.md
+            - 17 Documentation: services/service1/documentation-17.md
+            - 18 Documentation: services/service1/documentation-18.md
+            - 19 Documentation: services/service1/documentation-19.md
+            - 20 Documentation: services/service1/documentation-20.md
+          - Service 2: 
+            - 01 Documentation: services/service2/documentation-1.md
+            - 02 Documentation: services/service2/documentation-2.md
+            - 03 Documentation: services/service2/documentation-3.md
+            - 04 Documentation: services/service2/documentation-4.md
+            - 05 Documentation: services/service2/documentation-5.md
+            - 06 Documentation: services/service2/documentation-6.md
+            - 07 Documentation: services/service2/documentation-7.md
+            - 08 Documentation: services/service2/documentation-8.md
+            - 09 Documentation: services/service2/documentation-9.md
+            - 10 Documentation: services/service2/documentation-10.md
+            - 11 Documentation: services/service2/documentation-11.md
+            - 12 Documentation: services/service2/documentation-12.md
+            - 13 Documentation: services/service2/documentation-13.md
+            - 14 Documentation: services/service2/documentation-14.md
+            - 15 Documentation: services/service2/documentation-15.md
+            - 16 Documentation: services/service2/documentation-16.md
+            - 17 Documentation: services/service2/documentation-17.md
+            - 18 Documentation: services/service2/documentation-18.md
+            - 19 Documentation: services/service2/documentation-19.md
+            - 20 Documentation: services/service2/documentation-20.md
+          - Service 6: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 7: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 8: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 9: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 10: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+        - Tools: 
+          - Service 11: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 12: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 13: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 14: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 15: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 16: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 17: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 18: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 19: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+          - Service 20: 
+            - 01 Documentation: services/service1/documentation-1.md
+            - 02 Documentation: services/service1/documentation-2.md
+            - 03 Documentation: services/service1/documentation-3.md
+
+      
+  - Support:
       - Overview: 'support/getting-started.md'
       - Glossary: 'support/glossary.md'
       - Tutorials:
           - Introduction to HPC: 'support/intro-to-hpc.md'
           - Introduction to Linux and Bash: 'support/intro-to-linux.md'
+  - Design Options:
+      - Bullet Points: design-options/services-bullet.md
+      - Cards: design-options/services-cards.md
+      - Table: design-options/services-table.md
   - Material Components:
-    - Admonitions: materialcomponents/admonitions.md
-    - Code Blocks: materialcomponents/codeblocks.md
-    - Diagrams: materialcomponents/diagrams.md
-    - Tabs: materialcomponents/tabs.md 
-    - Buttons: materialcomponents/buttons.md
-    - Plugins: 
-      - Plugins: materialcomponents/plugins.md
+      - Admonitions: materialcomponents/admonitions.md
+      - Code Blocks: materialcomponents/codeblocks.md
+      - Diagrams: materialcomponents/diagrams.md
+      - Tabs: materialcomponents/tabs.md
+      - Buttons: materialcomponents/buttons.md
+      - Plugins:
+          - Plugins: materialcomponents/plugins.md
+
   
 
 markdown_extensions:
@@ -112,4 +210,6 @@ markdown_extensions:
       alternate_style: true
   # Enables Markdown table support    
   - tables
-      
+
+extra:
+  generator: false
