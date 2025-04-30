@@ -44,7 +44,7 @@ theme:
 
 # This is the site's pages (navigation)
 nav:
-  - Home: index.md
+  - Getting Started: index.md
   - Documentation:
       - Lorem Ipsum:
           - Service Description: services/service1/documentation-1.md
