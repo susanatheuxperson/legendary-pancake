@@ -1,4 +1,5 @@
-site_name: Legendary Pancake Test Site
+site_name: Documentation for Legendary Pancake
+site_description: Documentation for Legendary Pancake, a fictional project. 
 site_author: A Company
 site_url: https://susanatheuxperson.github.io/legendary-pancake/
 
@@ -9,12 +10,7 @@ theme:
   name: material
   features:
     - navigation.sections   # Sidebar dropdowns
-    - navigation.tabs       # Top navigation tabs
-    - navigation.tabs.sticky # Sticky top navigation tabs
     - toc.follow            # Table of contents
-    #- navigation.footer     # Footer navigation unsure if relevant
-    - navigation.path        # Breadcrumbs
-
 
   font:
     text: Source Sans 3
@@ -25,8 +21,8 @@ theme:
 
   icon:
     # logo: assets/JAXlogo.png
-    logo: material/cat
-    # This list below is for all of the admonition types
+    logo: material/atom
+# This list below is for all of the admonition types
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
@@ -46,169 +42,122 @@ theme:
     primary: custom
     accent: custom
 
-
 # This is the site's pages (navigation)
 nav:
   - Home: index.md
-  - Software & Tools: 
-      - Getting Started: services/services-index.md
-      - Documentation:
-        - Software:
-          - Service 1: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-            - 04 Documentation: services/service1/documentation-4.md
-            - 05 Documentation: services/service1/documentation-5.md
-            - 06 Documentation: services/service1/documentation-6.md
-            - 07 Documentation: services/service1/documentation-7.md
-            - 08 Documentation: services/service1/documentation-8.md
-            - 09 Documentation: services/service1/documentation-9.md
-            - 10 Documentation: services/service1/documentation-10.md
-            - 11 Documentation: services/service1/documentation-11.md
-            - 12 Documentation: services/service1/documentation-12.md
-            - 13 Documentation: services/service1/documentation-13.md
-            - 14 Documentation: services/service1/documentation-14.md
-            - 15 Documentation: services/service1/documentation-15.md
-            - 16 Documentation: services/service1/documentation-16.md
-            - 17 Documentation: services/service1/documentation-17.md
-            - 18 Documentation: services/service1/documentation-18.md
-            - 19 Documentation: services/service1/documentation-19.md
-            - 20 Documentation: services/service1/documentation-20.md
-          - Service 2: 
-            - 01 Documentation: services/service2/documentation-1.md
-            - 02 Documentation: services/service2/documentation-2.md
-            - 03 Documentation: services/service2/documentation-3.md
-            - 04 Documentation: services/service2/documentation-4.md
-            - 05 Documentation: services/service2/documentation-5.md
-            - 06 Documentation: services/service2/documentation-6.md
-            - 07 Documentation: services/service2/documentation-7.md
-            - 08 Documentation: services/service2/documentation-8.md
-            - 09 Documentation: services/service2/documentation-9.md
-            - 10 Documentation: services/service2/documentation-10.md
-            - 11 Documentation: services/service2/documentation-11.md
-            - 12 Documentation: services/service2/documentation-12.md
-            - 13 Documentation: services/service2/documentation-13.md
-            - 14 Documentation: services/service2/documentation-14.md
-            - 15 Documentation: services/service2/documentation-15.md
-            - 16 Documentation: services/service2/documentation-16.md
-            - 17 Documentation: services/service2/documentation-17.md
-            - 18 Documentation: services/service2/documentation-18.md
-            - 19 Documentation: services/service2/documentation-19.md
-            - 20 Documentation: services/service2/documentation-20.md
-          - Service 6: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 7: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 8: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 9: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 10: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-        - Tools: 
-          - Service 11: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 12: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 13: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 14: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 15: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 16: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 17: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 18: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 19: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-          - Service 20: 
-            - 01 Documentation: services/service1/documentation-1.md
-            - 02 Documentation: services/service1/documentation-2.md
-            - 03 Documentation: services/service1/documentation-3.md
-
-      
-  - Support:
-      - Overview: 'support/getting-started.md'
-      - Glossary: 'support/glossary.md'
-      - Tutorials:
-          - Introduction to HPC: 'support/intro-to-hpc.md'
-          - Introduction to Linux and Bash: 'support/intro-to-linux.md'
-  - Design Options:
-      - Bullet Points: design-options/services-bullet.md
-      - Cards: design-options/services-cards.md
-      - Table: design-options/services-table.md
-  - Material Components:
-      - Admonitions: materialcomponents/admonitions.md
-      - Code Blocks: materialcomponents/codeblocks.md
-      - Diagrams: materialcomponents/diagrams.md
-      - Tabs: materialcomponents/tabs.md
-      - Buttons: materialcomponents/buttons.md
-      - Plugins:
-          - Plugins: materialcomponents/plugins.md
-
-  
+  - Documentation:
+      - Lorem Ipsum:
+          - Service Description: services/service1/documentation-1.md
+          - Documentation 1: services/service1/documentation-2.md
+          - Documentation 2: services/service1/documentation-3.md
+      - Dolor Sit Amet:
+          - Overview: services/service2/index.md
+          - Documentation 1: services/service2/documentation-1.md
+          - Documentation 2: services/service2/documentation-2.md
+      - Consectetur Adipiscing:
+          - Overview: services/service3/index.md
+          - Documentation 1: services/service3/documentation-1.md
+          - Documentation 2: services/service3/documentation-2.md
+      - Elit Sed Do:
+          - Overview: services/service4/index.md
+          - Documentation 1: services/service4/documentation-1.md
+          - Documentation 2: services/service4/documentation-2.md
+      - Eiusmod Tempor:
+          - Overview: services/service5/index.md
+          - Documentation 1: services/service5/documentation-1.md
+          - Documentation 2: services/service5/documentation-2.md
+      - Incididunt Ut:
+          - Overview: services/service6/index.md
+          - Documentation 1: services/service6/documentation-1.md
+          - Documentation 2: services/service6/documentation-2.md
+      - Labore Et Dolore:
+          - Overview: services/service7/index.md
+          - Documentation 1: services/service7/documentation-1.md
+          - Documentation 2: services/service7/documentation-2.md
+      - Magna Aliqua:
+          - Overview: services/service8/index.md
+          - Documentation 1: services/service8/documentation-1.md
+          - Documentation 2: services/service8/documentation-2.md
+      - Ut Enim Ad Minim:
+          - Overview: services/service9/index.md
+          - Documentation 1: services/service9/documentation-1.md
+          - Documentation 2: services/service9/documentation-2.md
+      - Veniam Quis Nostrud:
+          - Overview: services/service10/index.md
+          - Documentation 1: services/service10/documentation-1.md
+          - Documentation 2: services/service10/documentation-2.md
+      - Exercitation Ullamco:
+          - Overview: services/service11/index.md
+          - Documentation 1: services/service11/documentation-1.md
+          - Documentation 2: services/service11/documentation-2.md
+      - Laboris Nisi Ut:
+          - Overview: services/service12/index.md
+          - Documentation 1: services/service12/documentation-1.md
+          - Documentation 2: services/service12/documentation-2.md
+      - Aliquip Ex Ea:
+          - Overview: services/service13/index.md
+          - Documentation 1: services/service13/documentation-1.md
+          - Documentation 2: services/service13/documentation-2.md
+      - Commodo Consequat:
+          - Overview: services/service14/index.md
+          - Documentation 1: services/service14/documentation-1.md
+          - Documentation 2: services/service14/documentation-2.md
+      - Duis Aute Irure:
+          - Overview: services/service15/index.md
+          - Documentation 1: services/service15/documentation-1.md
+          - Documentation 2: services/service15/documentation-2.md
+      - Reprehenderit In:
+          - Overview: services/service16/index.md
+          - Documentation 1: services/service16/documentation-1.md
+          - Documentation 2: services/service16/documentation-2.md
+      - Voluptate Velit Esse:
+          - Overview: services/service17/index.md
+          - Documentation 1: services/service17/documentation-1.md
+          - Documentation 2: services/service17/documentation-2.md
+      - Cillum Dolore Eu:
+          - Overview: services/service18/index.md
+          - Documentation 1: services/service18/documentation-1.md
+          - Documentation 2: services/service18/documentation-2.md
+      - Fugiat Nulla Pariatur:
+          - Overview: services/service19/index.md
+          - Documentation 1: services/service19/documentation-1.md
+          - Documentation 2: services/service19/documentation-2.md
+      - Excepteur Sint:
+          - Overview: services/service20/index.md
+          - Documentation 1: services/service20/documentation-1.md
+          - Documentation 2: services/service20/documentation-2.md
 
 markdown_extensions:
 # Enables use of grid cards
+# Enables use of grid cards
   - attr_list
   - md_in_html
-  # Enables emojis :)
+# Enables emojis :)
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  # Callouts for relevant side content    
+# Callouts for relevant side content    
   - admonition
   - pymdownx.details
-  # This is for mermaid data visualization plugin
+# This is for mermaid data visualization plugin
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  # Allows for highlighting code blocks         
+# Allows for highlighting code blocks         
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  # An extension that allows for the ability to embed content into a document including other docs or source file.
-  - pymdownx.snippets
-  # Allows for content tabs
+# An extension that allows for the ability to embed content into a document including other docs or source file.
+  - pymdownx.snippets # Allows for content tabs
+
+# Allows for content tabs
   - pymdownx.tabbed:
       alternate_style: true
-  # Enables Markdown table support    
+# Enables Markdown table support    
   - tables
 
 extra:
