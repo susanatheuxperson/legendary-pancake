@@ -8,9 +8,13 @@ extra_css:
   - stylesheets/extra.css
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.sections   # Sidebar dropdowns
     - toc.follow            # Table of contents
+    - content.action.edit
+    - content.action.view
+  #  - content.footer.last-updated
 
   font:
     text: Source Sans 3
@@ -76,6 +80,13 @@ markdown_extensions:
 
 extra:
   generator: false
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: false
+      fallback_to_build_date: true
+      type: date
 
 # This is the site's pages (navigation)
 nav:

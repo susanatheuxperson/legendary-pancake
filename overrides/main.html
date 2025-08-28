@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {% if page.meta.git_revision_date_localized %}
+    <p class="last-updated" style="margin-top:-0.5rem; font-size:0.9em; color:var(--md-default-fg-color--light);">
+      Last Updated: {{ page.meta.git_revision_date_localized }}
+    </p>
+  {% endif %}
+
+  {{ super() }}
+{% endblock %}
